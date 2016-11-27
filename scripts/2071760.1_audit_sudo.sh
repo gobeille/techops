@@ -13,7 +13,7 @@
 #	REPORT_DESTINATION_PATH 
 #		The NSH path, including host, where reports will go.
 #		Default : //alprut01-m/usr/local/app/techops/auth_files
-#	
+#	  
 #########################################################################################################################
 
 # This assumes several possible locations for the sudo executable, /usr/local/bin for the 3rd party version and /bin for the native version
