@@ -4,8 +4,8 @@
 #
 # Scott Gobeille - November 2016
 #
-# This job collects sudo configurations, locations, versions and some host values -- OS version, etc -- into reports.
-# It is the first part of two scripts. The second will compile host-specific reports into single master reports.
+# This job collects host OS and OS Version 
+# 
 # 
 #
 # Parameters
@@ -50,7 +50,8 @@ echo "REPORT_DESTINATION_PATH = $REPORT_DESTINATION_PATH"
 # The name of the host for each report will be in the name of the report as defined below.
 
 DATE_STAMP=`date +%Y%m%d`
-
+SUDO_REPORT=$REPORT_DESTINATION_PATH/$NSH_RUNCMD_HOST.sudo.$DATE_STAMP
+SUDOERS_REPORT=$REPORT_DESTINATION_PATH/$NSH_RUNCMD_HOST.sudoers.$DATE_STAMP
 HOST_INFO_REPORT=$REPORT_DESTINATION_PATH/$NSH_RUNCMD_HOST.host_info.$DATE_STAMP
 
 echo "SUDO_REPORT = $SUDO_REPORT"
@@ -78,11 +79,6 @@ write_host_info_report ()
 
 }
 
-
-
 write_host_info_report
-
-
-
 # This is a normal, successful exit. Use exit 1 for failures so they show up clearly in the job status with a red icon.
 exit 0
