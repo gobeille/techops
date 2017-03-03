@@ -1,6 +1,9 @@
 # Overview
 Organizer explains what a code repository is, what it could be used for and what aspect of it will be looked at in the training.
 
+Git is a popular software code repository written by Linux creator Linus Torvalds. It responds quickly to checking in/out code 
+but may be difficult to learn. It integrates with BladeLogic and works with GitHub, a tool which facilitates collaboration. 
+
 # GitHub account creation
 Participant creates, or accesses an existing account in GitHub.
 
