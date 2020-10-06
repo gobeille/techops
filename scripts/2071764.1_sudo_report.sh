@@ -12,7 +12,7 @@
 #
 #	REPORT_DESTINATION_PATH 
 #		The NSH path, including host, where reports will go.
-#		Default : //alprut01-m/usr/local/app/techops/auth_files
+#		Default : //my_hostname/usr/local/app/techops/auth_files
 #	  
 #########################################################################################################################
 
